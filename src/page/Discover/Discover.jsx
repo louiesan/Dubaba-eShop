@@ -130,9 +130,9 @@ export default function Discover() {
   const [showCat, setShowCat] = useState(false);
   console.log(items);
   useEffect(() => {
+    dispatch(getCategories());
     if (items && items.length > 0) return;
     dispatch(fetchStore());
-    dispatch(getCategories());
   }, []);
 
   function addTheItem(param) {
