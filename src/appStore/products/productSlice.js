@@ -72,7 +72,6 @@ const productSlice = createSlice({
       });
     builder
       .addCase(getCategories.pending, (state) => {
-        state.status = "loading";
         state.err = null;
       })
       .addCase(getCategories.fulfilled, (state, action) => {
