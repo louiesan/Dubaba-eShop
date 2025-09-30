@@ -25,7 +25,7 @@ export const cartSlice = createSlice({
       if (index === -1 || !state.cart) {
         state.cart.push(action.payload.newItem);
       } else {
-        state.cart[index].quantity += action.payload.amount;
+        state.cart[index].quantity += Number(action.payload.amount);
       }
 
       state.totalAmount = state.cart.reduce(
