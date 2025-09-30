@@ -1,0 +1,9 @@
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  float: none !important;
+  display: flex !important;
+  height: auto !important;
+}
