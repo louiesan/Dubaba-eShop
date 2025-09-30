@@ -63,7 +63,7 @@ export default function NavBar() {
                 ? "text-black"
                 : "text-gray-600 hover:translate-1 transition-all duration-500 ease-in-out"
             }
-            to={"/About"}
+            to={"/about"}
           >
             <li className="flex gap-1.5 items-center font-['Poppins',_sans-serif] font-[600] text-lg hover:text-black transition-all duration-500 ease-in-out">
               <BadgeInfo size={19} /> About
@@ -75,7 +75,7 @@ export default function NavBar() {
                 ? "text-black"
                 : "text-gray-600 hover:translate-1 transition-all duration-500 ease-in-out"
             }
-            to={"/Contact"}
+            to={"/contact"}
           >
             <li className="flex gap-1.5 items-center font-['Poppins',_sans-serif] font-[600] text-lg hover:text-black transition-all duration-500 ease-in-out">
               <Contact size={19} /> Contact
@@ -87,14 +87,14 @@ export default function NavBar() {
                 ? "text-black"
                 : "text-gray-600 hover:translate-1 transition-all duration-500 ease-in-out"
             }
-            to={"/Favorite"}
+            to={"/favorite"}
           >
             <li className="flex gap-1.5 items-center font-['Poppins',_sans-serif] font-[600] text-lg hover:text-black transition-all duration-500 ease-in-out">
               <BookHeart size={19} /> Favorites
             </li>
           </NavLink>
           <div>
-            <NavLink className={`relative block `} to={"/Cart"}>
+            <NavLink className={`relative block `} to={"/cart"}>
               <div className="absolute content-['${favorite.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
                 {favorite.length}
               </div>
@@ -127,7 +127,7 @@ export default function NavBar() {
                 size={20}
               />
             )}
-            <NavLink className={`relative block `} to={"/Cart"}>
+            <NavLink className={`relative block `} to={"/cart"}>
               <div className="absolute content-['${favorite.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
                 {favorite.length}
               </div>
@@ -170,7 +170,7 @@ export default function NavBar() {
                   ? "text-black"
                   : "text-white/60 hover:translate-x-1 transition-all duration-500 ease-in-out"
               }
-              to={"/About"}
+              to={"/about"}
             >
               <li className="flex gap-1.5 items-center font-['Poppins',_sans-serif] font-[600] text-lg hover:text-black transition-all duration-500 ease-in-out">
                 <BadgeInfo size={19} /> About
@@ -182,7 +182,7 @@ export default function NavBar() {
                   ? "text-black"
                   : "text-white/60 hover:translate-x-1 transition-all duration-500 ease-in-out"
               }
-              to={"/Contact"}
+              to={"/contact"}
             >
               <li className="flex gap-1.5 items-center font-['Poppins',_sans-serif] font-[600] text-lg hover:text-black transition-all duration-500 ease-in-out">
                 <Contact size={19} /> Contact
@@ -194,7 +194,7 @@ export default function NavBar() {
                   ? "text-black"
                   : "text-white/60 hover:translate-x-1 transition-all duration-500 ease-in-out"
               }
-              to={"/Favorite"}
+              to={"/favorite"}
             >
               <li className="flex gap-1.5 items-center font-['Poppins',_sans-serif] font-[600] text-lg hover:text-black transition-all duration-500 ease-in-out">
                 <BookHeart size={19} /> Favorites
