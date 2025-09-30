@@ -11,7 +11,7 @@ import techproduct from "./techproduct.webp";
 import FurnitureBundle from "./FurnitureBundle.webp";
 import mooonset from "./mooonset.webp";
 import heart from "./heart.webp";
-import cart from "./cart.webp";
+import carted from "./cart.webp";
 
 export {
   clothesBundle,
