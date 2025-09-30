@@ -27,5 +27,5 @@ export {
   FurnitureBundle,
   mooonset,
   heart,
-  cart,
+  carted,
 };
