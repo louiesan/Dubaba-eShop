@@ -19,7 +19,6 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const menu = useRef(null);
   useOutside(menu, () => setIsOpen(false));
-  console.log(favorite);
   return (
     <>
       <header className="hidden md:flex w-full h-20 p-2.5 gap-5 flex-row flex-nowrap items-center justify-between">
