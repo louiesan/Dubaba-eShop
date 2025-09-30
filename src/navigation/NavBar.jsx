@@ -95,7 +95,7 @@ export default function NavBar() {
           </NavLink>
           <div>
             <NavLink className={`relative block `} to={"/cart"}>
-              <div className="absolute content-['${favorite.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
+              <div className="absolute content-['${cart.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
                 {cart.length}
               </div>
               <ShoppingCart size={19} />
@@ -128,7 +128,7 @@ export default function NavBar() {
               />
             )}
             <NavLink className={`relative block `} to={"/cart"}>
-              <div className="absolute content-['${favorite.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
+              <div className="absolute content-['${cart.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
                 {cart.length}
               </div>
               <ShoppingCart size={20} />
