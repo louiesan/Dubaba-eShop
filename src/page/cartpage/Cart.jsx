@@ -146,12 +146,12 @@ export default function Cart() {
           </div>
         </div>
       ) : (
-        <Link to={"/Discover"} className="w-full h-fit">
+        <Link to={"/discover"} className="w-full h-fit">
           <div className="w-full h-fit flex flex-col items-center justify-start text-center ">
             <h1 className="text-xl capitalize sm:text-3xl font-bold font-['Inter'] text-black/50">
               Still Empty Go Add Some Items Click below
             </h1>
-            <img className="w-3xs sm:w-xs" src={cart} alt="HeartWebp" />
+            <img className="w-3xs sm:w-xs" src={heart} alt="cartWebp" />
           </div>
         </Link>
       )}
