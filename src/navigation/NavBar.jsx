@@ -15,7 +15,7 @@ import useOutside from "./useOutside/useOutside";
 import { useSelector } from "react-redux";
 
 export default function NavBar() {
-  const favorite = useSelector((state) => state.favoriteReducer.favorite);
+  const cart = useSelector((state) => state.cartReducer.cart);
   const [isOpen, setIsOpen] = useState(false);
   const menu = useRef(null);
   useOutside(menu, () => setIsOpen(false));
@@ -96,7 +96,7 @@ export default function NavBar() {
           <div>
             <NavLink className={`relative block `} to={"/cart"}>
               <div className="absolute content-['${favorite.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
-                {favorite.length}
+                {cart.length}
               </div>
               <ShoppingCart size={19} />
             </NavLink>
@@ -129,7 +129,7 @@ export default function NavBar() {
             )}
             <NavLink className={`relative block `} to={"/cart"}>
               <div className="absolute content-['${favorite.length}'] w-5 content-center h-5 rounded-full text-xs text-white -top-3 -right-2.5 bg-amber-300 z-[-1] text-center font-bold">
-                {favorite.length}
+                {cart.length}
               </div>
               <ShoppingCart size={20} />
             </NavLink>
