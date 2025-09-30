@@ -4,8 +4,6 @@ import {
   fetchStore,
 } from "../../appStore/products/productSlice";
 import { Link, useNavigate } from "react-router";
-// import Slider from "./component/Slider";
-import Searcher from "./component/Search";
 import { useEffect, useState } from "react";
 import {
   clothesBundle,
@@ -72,7 +70,7 @@ export default function Home() {
     autoplaySpeed: 4000,
     cssEase: "ease-in-out",
     pauseOnHover: true,
-    // autoplay: true,
+    autoplay: true,
     speed: 2000,
     autoplaySpeed: 2000,
     cssEase: "linear",

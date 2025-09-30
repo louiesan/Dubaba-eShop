@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router";
+import { cart } from "../../assets/image";
 
 import {
   addToCart,
@@ -150,11 +151,7 @@ export default function Cart() {
             <h1 className="text-xl capitalize sm:text-3xl font-bold font-['Inter'] text-black/50">
               Still Empty Go Add Some Items Click below
             </h1>
-            <img
-              className="w-3xs sm:w-xs"
-              src="./src/assets/cart.webp"
-              alt="HeartWebp"
-            />
+            <img className="w-3xs sm:w-xs" src={cart} alt="HeartWebp" />
           </div>
         </Link>
       )}

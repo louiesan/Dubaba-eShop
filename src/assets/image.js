@@ -10,6 +10,8 @@ import tablet from "./tablet.webp";
 import techproduct from "./techproduct.webp";
 import FurnitureBundle from "./FurnitureBundle.webp";
 import mooonset from "./mooonset.webp";
+import heart from "./heart.webp";
+import cart from "./cart.webp";
 
 export {
   clothesBundle,
@@ -24,4 +26,6 @@ export {
   techproduct,
   FurnitureBundle,
   mooonset,
+  heart,
+  cart,
 };

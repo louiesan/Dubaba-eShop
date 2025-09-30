@@ -1,9 +1,10 @@
 import { useSelector, useDispatch } from "react-redux";
-import { Ban, Filter, Heart, ListRestart, Plus, Star, X } from "lucide-react";
+import { Ban, Heart, Plus, Star, X } from "lucide-react";
 import { addToCart } from "../../appStore/cart/cartSlice";
 import { addToFav } from "../../appStore/favorite/favoriteSlice";
+import { heart } from "../../assets/image";
 import toast, { Toaster } from "react-hot-toast";
-import { Link, NavLink } from "react-router";
+import { Link } from "react-router";
 
 const Carted = () =>
   toast(
@@ -215,11 +216,7 @@ export default function Favorites() {
             <h1 className="text-xl capitalize sm:text-3xl font-bold font-['Inter'] text-black/50">
               Still Empty Go Save Some Items Click below
             </h1>
-            <img
-              className="w-3xs sm:w-xs"
-              src="./src/assets/heart.webp"
-              alt="HeartWebp"
-            />
+            <img className="w-3xs sm:w-xs" src={heart} alt="HeartWebp" />
           </div>
         </Link>
       )}
